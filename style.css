@@ -1,0 +1,565 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans' , sans-serif;
+    line-height: 1.8;
+}
+
+.container {
+    max-width: 100%;
+    margin: auto;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Showcase Navbar */
+
+#showcase {
+    background-image: url('./img/home/showcase.jpg');
+    background-repeat: no-repeat;
+    background-attachment: center;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#showcase .navbar {
+    background-color: rgb(34, 33, 33);
+    color: white;
+    opacity: 0.6;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#showcase .navbar h1 span {
+    color: green;
+}
+
+#showcase .navbar .lst {
+    display: flex;
+}
+
+#showcase .navbar .lst li a {
+    color: white;
+    padding: 10px 20px;
+}
+
+#showcase .navbar .lst li a:hover {
+    border-bottom: 3px solid green;
+}
+
+/* Showcase Showcase-Content  */
+ 
+#showcase .showcase-content {
+    color: white;
+    text-align: center;
+}
+
+#showcase .showcase-content h1 {
+    font-size: 55px;
+}
+
+#showcase .showcase-content p {
+    font-size: 23px;
+}
+
+#showcase .showcase-content a {
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+#showcase .showcase-content a:hover {
+    opacity: 0.9;
+}
+
+#showcase::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(5, 5, 5, 0.6);
+}
+
+#showcase * {
+    z-index: 1;
+}
+
+/* About */
+
+#about {
+    display: flex;
+}
+
+.split {
+    text-align: center;
+    padding: 50px 40px;
+    width: 33.3%;
+}
+
+.split .fas {
+    background-color: green;
+    border: 15px solid green;
+    color: white;
+    border-radius: 50%;
+}
+
+.split h3 {
+    padding-top: 15px;
+}
+
+/* Features */
+
+.features {
+    display: flex;
+}
+
+.features img {
+    width: 50%;
+}
+
+.features-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: green;
+    color: rgb(216, 215, 215);
+    text-align: left;
+    padding: 20px 30px;
+    width: 50%;
+}
+
+.features-content h3 {
+    font-weight: lighter;
+    padding-bottom: 5px;
+}
+
+.features-content h1 {
+    font-size: 40px;
+    padding-bottom: 10px;
+    line-height: 1;
+}
+
+.features-content p {
+    padding-bottom: 20px;
+}
+
+.features-content a {
+    background-color: green;
+    color: rgb(216, 215, 215);
+    border: 1px solid rgb(216, 215, 215);
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+/* Cases */
+
+#cases {
+    text-align: center;
+    margin: 20px;
+}
+
+.content-cases h3 {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.content-cases h1 {
+    font-size: 40px;
+    font-weight: lighter;
+    line-height: 1.6;
+}
+
+.content-cases p {
+    padding-bottom: 10px;
+}
+
+.img-cases {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-cases img {
+    width: 25%;
+    height: 25%;
+    padding: 5px;
+}
+
+.img-cases img:hover {
+    opacity: 0.7;
+}
+
+/* Blog */
+
+#blog {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#blog img {
+    width: 50%;
+}
+
+.blog-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: rgb(41, 94, 138);
+    color: rgb(216, 215, 215);
+    text-align: left;
+    padding: 40px;
+    width: 50%;
+}
+
+.blog-content h3 {
+    font-weight: lighter;
+    padding-bottom: 5px;
+}
+
+.blog-content h1 {
+    font-size: 40px;
+    padding-bottom: 20px;
+    line-height: 1;
+}
+
+.blog-content a {
+    background-color: rgb(41, 94, 138);
+    color: rgb(216, 215, 215);
+    border: 1px solid rgb(216, 215, 215);
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+/* Team */
+
+.team {
+    text-align: center;
+    padding: 20px;
+}
+
+.content-team h1 {
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+.content-team p {
+    font-size: medium;
+}
+
+.img-team {
+    display: flex;
+}
+
+.img-team .imgt img {
+    width: 100%;
+    height: 80%;
+    border-radius: 50%;
+    padding: 20px 5px 0px 5px;
+}
+
+.img-team .imgt .team {
+    font-weight: bolder;
+    padding: 5px 0 0 0;
+}
+
+/* Contact */
+
+#contact {
+    display: flex;
+}
+
+#contact img {
+    width: 50%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: rgb(243, 241, 243);
+    color: rgb(34, 33, 33);
+    text-align: left;
+    padding: 30px;
+    width: 50%;
+}
+
+.contact-form h1 {
+    font-size: 30px;
+    font-weight: lighter;
+    padding-bottom: 20px;
+    line-height: 1;
+}
+
+.contact-form input {
+    border: 1px solid white;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-form input:focus {
+    outline-color: green;
+}
+
+.contact-form a ul li {
+    background-color: green;
+    color: rgb(216, 215, 215);
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.contact-form a:hover ul li {
+    opacity: 0.9;
+}
+
+/* Footer */
+
+footer {
+    background-color: rgb(34, 33, 33);
+    color: rgb(216, 215, 215);
+    text-align: center;
+    padding: 40px;
+}
+
+footer .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .links a {
+    color: rgb(216, 215, 215);
+    padding: 0px 15px;
+}
+
+footer .links a:hover {
+    color: green;
+}
+
+footer p {
+    font-size: large;
+    padding-top: 10px;
+}
+
+/* Additional Blog */
+
+.blog-showcase {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: relative;
+    height: 30vh;
+}
+
+.blog-showcase .navbar {
+    background-color: rgb(34, 33, 33);
+    color: white;
+    opacity: 0.6;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    padding: 10px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog-showcase .navbar h1 span {
+    color: green;
+}
+
+.blog-showcase .navbar .lst {
+    display: flex;
+}
+
+.blog-showcase .navbar .lst li a {
+    color: white;
+    padding: 10px 20px;
+}
+
+.blog-showcase .navbar .lst li a:hover {
+    border-bottom: 3px solid green;
+}
+
+.blog-showcase-content h1 {
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    padding: 60px;
+}
+
+.blog-showcase::before {
+    content: '';
+    background-image: url('../img/home/blog.jpg');
+    background-repeat: no-repeat;
+    background-attachment: center;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30vh;
+    width: 100%;
+    z-index: -1;
+}
+
+/* Blog One/Three */
+
+.blog1 {
+    display: flex;
+}
+
+.blog1 img {
+    width: 50%;
+}
+
+.blog1 .blog1-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: white;
+    color: rgb(34, 33, 33);
+    text-align: left;
+    padding: 30px;
+    width: 50%;
+}
+
+.blog1 .blog1-content h1 {
+    font-size: 40px;
+}
+
+.blog1 .blog1-content h3 {
+    font-weight: lighter;
+    padding-bottom: 5px;
+}
+
+.blog1 .blog1-content h3 span {
+    font-weight: 900;
+}
+
+.blog1 .blog1-content a {
+    background-color: rgb(34, 33, 33);
+    color: white;
+    border: 1px solid rgb(34, 33, 33);
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+
+.blog1 .blog1-content a:hover {
+    opacity: 0.9;
+}
+
+/* Blog Two */
+
+.blog2 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.blog2 img {
+    width: 50%;
+}
+
+.blog2 .blog2-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: rgb(34, 33, 33);
+    color: white;
+    text-align: left;
+    padding: 30px;
+    width: 50%;
+}
+
+.blog2 .blog2-content h1 {
+    font-size: 40px;
+}
+
+.blog2 .blog2-content h3 {
+    font-weight: lighter;
+    padding-bottom: 5px;
+}
+
+.blog2 .blog2-content h3 span {
+    font-weight: 900;
+}
+
+.blog2 .blog2-content a {
+    background-color: white;
+    color: rgb(34, 33, 33);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+
+.blog2 .blog2-content a:hover {
+    opacity: 0.9;
+}
+
+/* Blog Post One/Two/Three */
+
+.blogp1 {
+    margin: 40px;
+    text-align: center;
+}
+
+.blogp1 h1 {
+    font-size: 40px;
+    text-align: left;
+}
+
+.blogp1 .para span {
+    font-weight: bolder;
+    text-align: left;
+}
+
+.blogp1 img {
+    width: 350px;
+    height: 225px;
+    border-radius: 50%;
+}
+
+.blogp1 p {
+    font-size: large;
+    text-align: left;
+    padding: 10px;
+}
+
+.blogp1 a {
+    background-color: rgb(34, 33, 33);
+    border-radius: 5px;
+    color: white;
+    padding: 10px 30px;
+    text-align: left;
+}
